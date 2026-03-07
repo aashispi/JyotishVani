@@ -12,7 +12,7 @@ export const runtime = "edge";
 
 const genai = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 const llm   = genai.getGenerativeModel({
-  model: "gemini-1.5-flash",
+  model: "gemini-2.5-flash",
   generationConfig: { temperature: 0.3, maxOutputTokens: 1024 },
 });
 
